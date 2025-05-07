@@ -1,0 +1,16 @@
+package:
+  name: me
+  dependencies:
+    - console
+    - effect
+    - prelude
+    - halogen
+    - halogen-vdom
+    - halogen-css
+  test:
+    main: Test.Main
+    dependencies: []
+workspace:
+  packageSet:
+    registry: 64.7.1
+  extraPackages: {}

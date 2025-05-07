@@ -1,0 +1,15 @@
+.direnv/
+result
+index.js
+dist/main.js
+bower_components/
+node_modules/
+.pulp-cache/
+output/
+output-es/
+generated-docs/
+.psc-package/
+.psc*
+.purs*
+.psa*
+.spago

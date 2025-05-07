@@ -1,0 +1,172 @@
+{
+  "nodes": {
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1696426674,
+        "narHash": "sha256-kvjfFW7WAETZlt09AgDn1MrtKzP7t90Vf7vypd3OL1U=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "0f9255e01c2351cc7d116c072cb317785dd33b33",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1743550720,
+        "narHash": "sha256-hIshGgKZCgWh6AYJpJmRgFdR3WUbkY04o82X05xqQiY=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "c621e8422220273271f52058f618c94e405bb0f5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1746461020,
+        "narHash": "sha256-7+pG1I9jvxNlmln4YgnlW4o+w0TZX24k688mibiFDUE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "3730d8a308f94996a9ba7c7138ede69c1b9ac4ae",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "pr-overlay": {
+      "inputs": {
+        "flake-compat": "flake-compat",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "slimlock": "slimlock"
+      },
+      "locked": {
+        "lastModified": 1746273929,
+        "narHash": "sha256-TnP+vXbxl+kZhiLwaYupnNxPlyHxLQwCmMJ8WeRXOjU=",
+        "owner": "thomashoneyman",
+        "repo": "purescript-overlay",
+        "rev": "78fe95d53d1b1e34f0d87a485f6f3add58c2aad0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thomashoneyman",
+        "repo": "purescript-overlay",
+        "type": "github"
+      }
+    },
+    "pr-registry": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1746517163,
+        "narHash": "sha256-fBesy+04u+5SDzhdRhwMgF3ErLJh0iFzqC3CtWonXcw=",
+        "owner": "purescript",
+        "repo": "registry",
+        "rev": "ca3c495e46e6ebafb116bf9c9b9ab089b4661e00",
+        "type": "github"
+      },
+      "original": {
+        "owner": "purescript",
+        "repo": "registry",
+        "type": "github"
+      }
+    },
+    "pr-registry-index": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1746495269,
+        "narHash": "sha256-XOAdQjGQ5bbFRnN5uE0pFYZ6lphKZ/dr086VidiJUC0=",
+        "owner": "purescript",
+        "repo": "registry-index",
+        "rev": "5372679ffaab9b11a6d8c62184d571c194cdc6ec",
+        "type": "github"
+      },
+      "original": {
+        "owner": "purescript",
+        "repo": "registry-index",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "nixpkgs": "nixpkgs",
+        "pr-overlay": "pr-overlay",
+        "pr-registry": "pr-registry",
+        "pr-registry-index": "pr-registry-index",
+        "spago-drv": "spago-drv"
+      }
+    },
+    "slimlock": {
+      "inputs": {
+        "nixpkgs": [
+          "pr-overlay",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1688756706,
+        "narHash": "sha256-xzkkMv3neJJJ89zo3o2ojp7nFeaZc2G0fYwNXNJRFlo=",
+        "owner": "thomashoneyman",
+        "repo": "slimlock",
+        "rev": "cf72723f59e2340d24881fd7bf61cb113b4c407c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thomashoneyman",
+        "repo": "slimlock",
+        "type": "github"
+      }
+    },
+    "spago-drv": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "ps-overlay": [
+          "pr-overlay"
+        ],
+        "registry": [
+          "pr-registry"
+        ],
+        "registry-index": [
+          "pr-registry-index"
+        ]
+      },
+      "locked": {
+        "lastModified": 1746383396,
+        "narHash": "sha256-sC+TnXGW4d7Oz+E/6vJ2O3TwwM1t5iutFvaLnTSy1NI=",
+        "owner": "jeslie0",
+        "repo": "mkSpagoDerivation",
+        "rev": "f7aba99392d669b700db4a5c56be8fd659bcd094",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jeslie0",
+        "repo": "mkSpagoDerivation",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
